@@ -1,0 +1,11 @@
+Victor Wu
+CS240
+Lab06 README
+
+1. Start differs from run in that it creates  a temporary break point.
+2. b n, where n is the line number to break
+3. continue
+4. When just encountering an error, like a logic error for example, you could go back and see the previous stacks
+5. info locals prints all the local variables while print allows you to output any expression, variables, etc.\
+
+The fixed program has a segmentation fault. The line commented shows where it happens.

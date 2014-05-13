@@ -1,0 +1,34 @@
+
+Testing Q4
+AND true
+OR true
+NAND false
+NOR false
+XOR false
+IMPL true
+EQU true
+
+AND false
+OR true
+NAND true
+NOR false
+XOR true
+IMPL false
+EQU false
+
+AND false
+OR true
+NAND true
+NOR false
+XOR true
+IMPL true
+EQU false
+
+AND false
+OR false
+NAND true
+NOR true
+XOR false
+IMPL true
+EQU true
+

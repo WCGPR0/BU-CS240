@@ -1,0 +1,50 @@
+POINT TESTS:
+
+Input the following point: (-1,2)
+Input X:
+Input Y:
+(-1,2) -- (-1,2)
+
+Input the following point: (10,-15)
+Input X:
+Input Y:
+(10,-15) -- (10,-15)
+
+Input the following point: (100,1500)
+Input X:
+Input Y:
+(100,1500) -- (100,1500)
+
+Input the following point: (-20435,-1452)
+Input X:
+Input Y:
+(-20435,-1452) -- (-20435,-1452)
+CIRCLE TESTS:
+
+Enter circle with center (2,3) and radius 10
+Input Center Coordinates:
+Input X:
+Input Y:
+Input Radius:
+Center: (2,3); Radius: 10  -- Center: (2,3); Radius: 10
+
+Enter circle with center (1,0) and radius -10
+Input Center Coordinates:
+Input X:
+Input Y:
+Input Radius:
+Center: (1,0); Radius: 10  -- Center: (1,0); Radius: 10
+
+Enter circle with center (-1,2) and radius 3.5
+Input Center Coordinates:
+Input X:
+Input Y:
+Input Radius:
+Center: (-1,2); Radius 3.5  -- Center: (-1,2); Radius: 3.5
+
+Enter circle with center (-2,-4) and radius -2.7
+Input Center Coordinates:
+Input X:
+Input Y:
+Input Radius:
+Center: (-2,-4); Radius 2.7  -- Center: (-2,-4); Radius: 2.7

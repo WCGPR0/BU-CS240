@@ -1,0 +1,18 @@
+COMPILIER=g++
+CFLAGS=-g -Wall -std=c++0x -c
+LDFLAGS=-g
+SOURCES=Circle.cpp Point.cpp tester.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=submission
+
+all: $(SOURCES) $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) 
+	$(COMPILIER) $(LDFLAGS) $(OBJECTS) -o $@
+
+.cpp.o:
+	$(COMPILIER) $(CFLAGS) $< -o $@
+depends:
+	less $^
+clean:
+	rm -f *.o $(EXEC1) $(EXEC2)

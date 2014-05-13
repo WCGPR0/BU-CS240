@@ -1,0 +1,14 @@
+#!/bin/bash
+# Runs the program with the supplied text files, 1.dat, 5.dat, 10.dat, 50.dat, 100.dat, 500.dat, 1000.dat, 5000.dat, 10000.dat, 50000.dat, 100000.dat, 500000.dat
+
+stringZ="1.dat 5.dat 10.dat 50.dat 100.dat 500.dat 1000.dat 5000.dat 10000.dat 50000.dat 100000.dat 500000.dat"
+for tempVar in ${stringZ}
+do
+	for i in 1 2 3 4
+		do
+		var="./$1 $tempVar 1 $i"
+		eval $var	
+		done
+done
+
+exit 0

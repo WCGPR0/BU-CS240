@@ -1,0 +1,31 @@
+DataProcessor::DataProcessor(){
+vector workingSet;
+}
+void DataProcessor::readFromFile(string fileName){
+	std::ofstream myFile(fileName,std::ofstream::in);
+	if (myFile.fail()) cerr << "Error";
+
+	myfile.close();
+}
+void DataProcessor::writeToFile(string fileName){
+	std::ofstream myfile(fileName,std::ofstream::out);
+	if (myFile.fail()) cerr << "Error";
+	for (std::vector<char>::const_iterator i = path.begin(); i != path.end(); ++i)
+//Do something
+	myfile.write();
+	myfile.close();
+}
+int DataProcessor::linearSearch(float searchElement){
+while (workingSet. 
+}
+int DataProcessor::binarySearch(float searchElement){
+
+}
+void DataProcessor::slowSort(){
+/** Implementing Bubble Sort */
+
+}
+void DataProcessor::fastSort(){
+/** Implementing Heapsort */
+
+}

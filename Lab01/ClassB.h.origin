@@ -1,0 +1,18 @@
+#include <iostream>
+
+/** QUESTION 1 */
+#ifndef CLASSB_H
+#define CLASSB_H
+
+class ClassB {
+	
+	public:
+	void array_sub(int myArray[], int sizeOfArray, int N, int M);
+	void print_even(int A, int B);
+	int least_common_multiple(int A, int B);
+	void boolCompare(bool A, bool B);
+	void print_fizzBuzz();
+	const char* toString(bool A);
+};
+
+#endif

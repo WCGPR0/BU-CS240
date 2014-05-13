@@ -1,0 +1,141 @@
+#include <stack>
+#include <queue>
+#include <string>
+#include <iostream>
+#include <assert.h>
+using namespace std;
+
+//template<typename T>
+int main(int argc, char* argv[]) {
+if (argc < 3) {cerr << "Atleast two arguments"; return -1;}
+
+if (string(argv[1]) == "-1") {
+assert(argv[1] == 3);
+//Question 3.1
+cout << "RPN Calculator" << endl;
+//Initialize an empty stack	
+stack<char> s;
+
+char stackChar;
+//Get the next token
+stackChar = *argv[2];
+
+while (stackChar != '\0') {
+int counter = 0;
+//If token is an operand
+if ((stackChar == '+') || (stackChar == '-')
+	|| (stackChar == '*') || (stackChar == '/')) {
+	//Push it onto the stack
+	assert(s.size() >= 2); //Stack must have two values
+	switch (stackChar) {
+		case '+': s.push(s.pop()+s.pop()); break;
+		case '-': s.push(s.pop()-s.pop()); break;
+		case '*': s.push(s.pop()*s.pop()); break;
+		case '/': s.push(s.pop()/s.pop()); break;
+		}
+	}
+else s.push(stackChar);
+counter+=2;
+stackChar = *(argv[2]+counter);
+}
+assert(s.size() == 1); //The stack has only the one value
+stackChar = s.pop();
+cout << stackChar << endl;
+return stackChar;
+}
+
+
+/*else if(string(argv[1]) == "-2")
+assert(argv[1] == 3);
+//Question 3.2
+{cout << "Moving Tiered Cakes" << endl;
+int tiers;
+assert(string(argv[2]) >> tiers && string(argv[2]).eof())
+	struct Cakes { enum Color { RED, GREEN, BLUE } color;
+			int tier = 0; };
+stack<Cakes> redPlate;
+stack<Cakes> greenPlate;
+stack<Cakes> bluePlate;
+for (int i = 0; i < argv[2]; i++) {
+	Cakes greenCake();
+	greenCake.Color = GREEN;
+	greenCake.tier = i;
+	redPlate.push(greenCake);
+	}
+
+bool startGreen = false;
+if (tiers % 2 == 0) startGreen = true;
+while (((greenPlate.top().tier < redPlate.top().tier) ||
+	(bluePlate.top().tier < redPlate.top())) && (redPlate.top().tier <= tiers)) {
+	if (bluePlate.top().tier < greenPlate.top().tier && !startGreen) {
+		bluePlate.push(redPlate.pop());
+		cout << "Move tier " << redPlate.top().tier << "from red to green."
+		}
+	else {
+		startGreen = false;
+		greenPlate.push(redPlate.pop());
+		cout << "Move tier " << redPlate.top().tier << "from red to green"
+		}
+}
+*/
+
+else if (string(argv[1]) == "-3")
+//Question 3.3
+{
+
+}
+
+else if (string(argv[1]) == "-4") 
+//Question 3.4
+{cout << "Animal Shelter Inventory" << endl;
+struct Animals {enum type { CATS, DOGS };
+		string name; };
+struct Owners { string name;
+		};	
+int userInput;
+string userInputS;
+bool isAvailable;
+queue<Animals> shelter;
+list<Owners> adopters;
+cout << "What would you like to do?" << endl;
+
+while(true) {
+	cout << "1.\t Add an animal. \n" << "2.\t Remove an animal. \n" << "3.\t Exit." << endl;
+	cin >> userInput;
+	if ((userInput == 1) || (userInput == 2) || (userInput ==3))
+		break;
+	}
+if (userInput == 1) {
+	cout << "Would you like to add a dog or a cat?" << endl;
+	while(true) {
+	cout << "1.\t Dog\n" << "2.\t Cat" << endl;
+	cin >> userInput;
+	if ((userInput == 1) || (userInput == 2)) break;
+	}
+	cout << "Provide the animal's name:\t";
+	cin >> userInputS;
+	Animal tempAnimal();
+	tempAnimal.name = userInputS;
+	shelter.push(tempAnimal);
+	}
+else if (userInput == 2) {
+	while(true) {
+	cout << "Would you like to adopt a dog or a cat?" << endl;
+	cout << "1.\t Dog\n" << "2.\t Cat\n" << "3.\t Either One\n" << endl;
+	if ((userInput == 1) || (userInput == 2) || (userInput == 3)) break;
+	}
+	if (isAvailable) {cout << "Provide the first name of the customer:" << endl;
+		cin >> userInputS;
+		Owners tempOwner();
+		tempOwner.name = userInputS;
+		adopters.insert(tempOwner);
+		}
+	else cout << "That option is not available." << endl;
+	}
+else terminate();
+}
+
+else {cerr << "Invalid flag, please insert -1, -2, -3"; 
+	return -1;}
+return 0;
+}

@@ -1,0 +1,139 @@
+POINT TESTS:
+-- Point -- Default constructor called.
+-- Point -- Copy constructor called.
+-- Point -- Explicit value constructor called.
+-- Point -- Explicit value constructor called.
+-- Point -- Explicit value constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Operator - called.
+Failed operator -
+  Expected 1.41421 computed 1
+-- Point -- Operator - called.
+Failed operator -
+  Expected 1.41421 computed 2.23607
+-- Point -- Operator - called.
+-- Point -- Explicit value constructor called.
+-- Point -- Destructor Called.
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+
+Input the following point: (-1,2)
+-- Operator >> called on a Point
+Input X: Input Y: (-1,2) -- -- Operator << called on a Point
+(-1,2)
+
+Input the following point: (10,-15)
+-- Operator >> called on a Point
+Input X: Input Y: (10,-15) -- -- Operator << called on a Point
+(10,-15)
+
+Input the following point: (100,1500)
+-- Operator >> called on a Point
+Input X: Input Y: (100,1500) -- -- Operator << called on a Point
+(100,1500)
+
+Input the following point: (-20435,-1452)
+-- Operator >> called on a Point
+Input X: Input Y: (-20435,-1452) -- -- Operator << called on a Point
+(-20435,-1452)
+CIRCLE TESTS:
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Copy constructor called.
+-- Point -- Copy constructor called.
+-- Point -- Destructor Called.
+-- Point -- Copy constructor called.
+-- Point -- Copy constructor called.
+-- Point -- Destructor Called.
+-- Point -- Copy constructor called.
+-- Point -- Copy constructor called.
+-- Point -- Destructor Called.
+-- Point -- Copy constructor called.
+-- Point -- Copy constructor called.
+-- Point -- Destructor Called.
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Assignment operator called.
+Failed circumference  Center:	-- Operator << called on a Point
+(-1,0);
+Radius:	-10
+  Expected 62.8319 computed -62.8319
+-- Point -- Explicit value constructor called.
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Operator - called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Operator - called.
+-- Point -- Explicit value constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Operator - called.
+Failed arclength test with -90 degrees.
+  Expected 4.71239 computed -1.5708
+Failed arclength test with 540 degrees.
+  Expected 3.14159 computed 9.42478
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+
+Enter circle with center (2,3) and radius 10
+-- Point -- Default constructor called.
+-- Point -- Default constructor called.
+-- Point -- Assignment operator called.
+-- Point -- Destructor Called.
+Input Center Coordinates: -- Operator >> called on a Point
+Input X: Input Y: Input Radius: Center: (2,3); Radius: 10  -- Center:	-- Operator << called on a Point
+(2,3);
+Radius:	10
+
+Enter circle with center (1,0) and radius -10
+Input Center Coordinates: -- Operator >> called on a Point
+Input X: Input Y: Input Radius: Center: (1,0); Radius: 10  -- Center:	-- Operator << called on a Point
+(1,0);
+Radius:	-10
+
+Enter circle with center (-1,2) and radius 3.5
+Input Center Coordinates: -- Operator >> called on a Point
+Input X: Input Y: Input Radius: Center: (-1,2); Radius 3.5  -- Center:	-- Operator << called on a Point
+(-1,2);
+Radius:	3.5
+
+Enter circle with center (-2,-4) and radius -2.7
+Input Center Coordinates: -- Operator >> called on a Point
+Input X: Input Y: Input Radius: Center: (-2,-4); Radius 2.7  -- Center:	-- Operator << called on a Point
+(-2,-4);
+Radius:	-2.7
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
+-- Point -- Destructor Called.
